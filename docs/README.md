@@ -1,4 +1,4 @@
-# CakePHP Huawei Router API plugin for CakePHP
+# Huawei Router API plugin for CakePHP
 
 ## Installation
 
@@ -71,7 +71,7 @@ You may create a file called `app_huawei_router.php` inside your `config` folder
 
 ## Url
 ```
-    your-domain.com/huawei-router-api/api/[ENDPOINT]
+    your-domain.com/huawei-router/api/<ENDPOINT>
 ```
 
 ## Table Example
