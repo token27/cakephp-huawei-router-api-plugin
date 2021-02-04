@@ -91,7 +91,7 @@ Display the information from the configuration file (app_huawei_router.php).
 
 | METHOD | Endpoint | Parameters | Description |
 | ------ | -------- | ---------- | --- |
-| **GET** | /huawei-router-api/api/config |  |  |
+| **GET** | /config |  |  |
 
 
 ### View the router information
@@ -99,7 +99,7 @@ Get the router information stats, signal, network, connection.
 
 | METHOD | Endpoint | Parameters | Description |
 | ------ | -------- | ---------- | --- |
-| **GET** | /huawei-router-api/api/info |  |  |
+| **GET** | /info |  |  |
 
 
 ### Reboot the router
@@ -107,11 +107,11 @@ This is useful to restart the router and acquire a new IP.
 
 | METHOD | Endpoint | Parameters | Description |
 | ------ | -------- | ---------- | --- |
-| **GET** | /huawei-router-api/api/reboot |  |  |
+| **GET** | /reboot |  |  |
 
 
 ### Show router traffic stats
 
 | METHOD | Endpoint | Parameters | Description |
 | ------ | -------- | ---------- | --- |
-| **GET** | /huawei-router-api/api/traffic |  |  |
+| **GET** | /traffic |  |  |
