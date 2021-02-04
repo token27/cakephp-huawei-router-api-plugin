@@ -23,8 +23,8 @@
         "cakephp/plugin-installer": "*"
     },
     "require-dev": {
-         "composer/composer": "*",
-         "phpunit/phpunit": "4.8"
+        "composer/composer": "*",
+        "phpunit/phpunit": "4.8"
     },
     "support": {
         "source": "https://github.com/token27/cakephp-huawei-router-api-plugin"
@@ -37,7 +37,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-        "Composer\\": "./vendor/composer/composer/src/Composer",
+            "Composer\\": "./vendor/composer/composer/src/Composer",
             "Token27\\HuaweiRouterApi\\Test\\": "tests/"            
         }
     },    

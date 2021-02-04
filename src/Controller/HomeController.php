@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * 
+ * Version      1.2.7
+ * Created      04/02/2021
+ * Modified     05/02/2021
+ * 
+ * @author      Axel Natanael Chacon Juan
+ * @copyright   2021 Token27
+ * @github      https://github.com/token27/
+ * @webiste     https://www.token27.com/
+ */
 declare(strict_types=1);
 
 namespace Token27\HuaweiRouterApi\Controller;

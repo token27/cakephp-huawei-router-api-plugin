@@ -1,0 +1,17 @@
+version: '3'
+services:    
+    huawei-router-api:
+#        image: token27/cakephp-huawei-router-api        
+        build:
+            context: .
+            dockerfile: docker/Dockerfile.cakephp        
+        ports:
+        - "80:80"        
+        volumes:
+        - .:/var/www/html/
+        environment:
+        - HUAWEI_ROUTER_IP=192.168.100.1
+        - HUAWEI_ROUTER_USERNAME=admin
+        - HUAWEI_ROUTER_PASSWORD=admin
+        
+    

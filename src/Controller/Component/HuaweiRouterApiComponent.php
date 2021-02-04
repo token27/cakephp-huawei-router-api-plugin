@@ -6,9 +6,10 @@
  * Version      1.0.0
  * Created      04/02/2021
  * Modified     04/02/2021
- *
- * @author      Token27
- * @copyright   2021
+ * 
+ * @author      Axel Natanael Chacon Juan
+ * @copyright   2021 Token27
+ * @website     https://github.com/token27/
  */
 declare(strict_types=1);
 
@@ -80,6 +81,9 @@ class HuaweiRouterApiComponent extends Component {
      * @return void
      */
     public function initialize(array $config): void {
+        if (!function_exists('curl_init') && !in_array('curl', get_loaded_extensions())) {
+            throw new \Exception('This Huawei Router Api plugin require CURL to work.');
+        }
         $this->customHttpClient = new CustomHttpClient();
     }
 
@@ -87,6 +91,8 @@ class HuaweiRouterApiComponent extends Component {
      * Makes sure that we are ready for API usage.
      */
     private function prepare() {
+
+
         //Check to see if we have session / token.
         if (strlen($this->sessionInfo) == 0 || strlen($this->tokenInfo) == 0) {
             //We don't have any. Grab some.

@@ -21,7 +21,7 @@ Or you can load the plugin in your `src/Application.php`'s bootstrap() using:
 $this->addPlugin('Token27/HuaweiRouterApi', ['routes' => true]);
 ```
 
-If you want disable the plugin endpoints
+If you want disable the plugin routes
 ```php
 $this->addPlugin('Token27/HuaweiRouterApi', ['routes' => false]);
 ```
@@ -40,7 +40,8 @@ You may create a file called `app_huawei_router.php` inside your `config` folder
 
 - File content:
     
-    ```
+    ```php
+    <?php
 	return [
             'HuaweiRouterApi' => [
                 /**
@@ -63,13 +64,14 @@ You may create a file called `app_huawei_router.php` inside your `config` folder
                 'password' => 'admin'
             ],
         ];
+    ?>       
     ```
 
 # API Endpoints
 
 ## Url
 ```
-    your-domain.com/huawei-router-api/api/
+    your-domain.com/huawei-router-api/api/[ENDPOINT]
 ```
 
 ## Table Example
@@ -89,7 +91,7 @@ Display the information from the configuration file (app_huawei_router.php).
 
 | METHOD | Endpoint | Parameters | Description |
 | ------ | -------- | ---------- | --- |
-| **GET** | /config |  |  |
+| **GET** | /huawei-router-api/api/config |  |  |
 
 
 ### View the router information
@@ -97,7 +99,7 @@ Get the router information stats, signal, network, connection.
 
 | METHOD | Endpoint | Parameters | Description |
 | ------ | -------- | ---------- | --- |
-| **GET** | /info |  |  |
+| **GET** | /huawei-router-api/api/info |  |  |
 
 
 ### Reboot the router
@@ -105,11 +107,11 @@ This is useful to restart the router and acquire a new IP.
 
 | METHOD | Endpoint | Parameters | Description |
 | ------ | -------- | ---------- | --- |
-| **GET** | /reboot |  |  |
+| **GET** | /huawei-router-api/api/reboot |  |  |
 
 
 ### Show router traffic stats
 
 | METHOD | Endpoint | Parameters | Description |
 | ------ | -------- | ---------- | --- |
-| **GET** | /traffic |  |  |
+| **GET** | /huawei-router-api/api/traffic |  |  |
