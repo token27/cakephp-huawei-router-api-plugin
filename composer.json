@@ -2,7 +2,7 @@
     "name": "token27/cakephp-huawei-router-api-plugin",
     "type": "cakephp-plugin",
     "description": "The is an API for Huawei Routers 3G/4G/LTE.",
-    "keywords": ["cakephp", "proxy-3g", "proxy-4g", "huawei", "routers", "3g", "4g,"lte", "proxy"],
+    "keywords": ["cakephp", "proxy-3g", "proxy", "huawei", "routers"],
     "homepage": "https://github.com/token27/cakephp-huawei-router-api-plugin",
     "license": "MIT",
     "authors": [
